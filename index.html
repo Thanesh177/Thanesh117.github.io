@@ -11,6 +11,8 @@
     <script defer src ="appp.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -66,7 +68,7 @@
         <source src="vid2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-        <img  source src="sky.png" /> </img>
+<div class="sky"></div>
         <div class="slider" style="--quantity: 7">
           <div class="item" style="--position: 1"><img src="database.png" alt=""></div>
           <div class="item" style="--position: 2"><img src="database.png" alt=""></div>
@@ -110,26 +112,8 @@
   <button class="scroll-btn left" onclick="scrollBoxes(-1)">&#8592;</button>
 
   <div class="scroll-container">
+
   <div class="boxx">
-    <i class="fas fa-laptop-code boxx-logo"></i>
-      <h3 class="boxx-heading">UI Designs</h3>
-      <p class="boxx-text">
-          I’ve Designed various websites focusing on user experience
-      </p>
-  </div>
-  <div class="boxx">
-    <i class="fas fa-microchip boxx-logo"></i>
-      <h3 class="boxx-heading">Hardware</h3>
-      <p class="boxx-text">
-          Hands-on experience with hardware components like sensors, motors, and microcontrollers.
-      </p>
-  </div>  <div class="boxx">
-    <i class="fas fa-network-wired boxx-logo"></i>
-      <h3 class="boxx-heading">Networks</h3>
-      <p class="boxx-text">
-          Network protocols, data transmission, and network security.
-      </p>
-  </div>  <div class="boxx">
     <i class="fas fa-robot boxx-logo"></i>
       <h3 class="boxx-heading">AI & ML</h3>
       <p class="boxx-text">
@@ -142,6 +126,27 @@
       <p class="boxx-text">
           Familiar with cloud platforms like AWS and Firebase for deploying applications.
   </div>
+  <div class="boxx">
+    <i class="fas fa-microchip boxx-logo"></i>
+      <h3 class="boxx-heading">Hardware</h3>
+      <p class="boxx-text">
+          Hands-on experience with hardware components like sensors, motors, and microcontrollers.
+      </p>
+  </div> 
+  <div class="boxx">
+    <i class="fas fa-laptop-code boxx-logo"></i>
+      <h3 class="boxx-heading">UI Designs</h3>
+      <p class="boxx-text">
+          I’ve Designed various websites focusing on user experience
+      </p>
+  </div>
+<div class="boxx">
+    <i class="fas fa-network-wired boxx-logo"></i>
+      <h3 class="boxx-heading">Networks</h3>
+      <p class="boxx-text">
+          Network protocols, data transmission, and network security.
+      </p>
+  </div> 
   </div>
 
   <button class="scroll-btn right" onclick="scrollBoxes(1)">&#8594;</button>
@@ -159,7 +164,6 @@
 
       Possesses hands-on experience in designing and building interactive projects, including programmable robotic bots. Skilled in assembling hardware components, integrating various sensors and actuators, and developing control algorithms to create functional robotic systems. Proficient in programming languages such as Python and Java, with the ability to write efficient, clean code for both hardware interaction and software development.
 
-      Well-versed in the fundamentals of robotic systems, including microcontroller programming, sensor data processing, and motor control. Experienced with platforms such as Arduino Uno, enabling the creation of autonomous robots capable of tasks like obstacle avoidance, line following, and remote control operation.
     </p>
 
     <div class="about-skills">
@@ -232,19 +236,19 @@
     </div>
   </div>
 
-  <div class="timeline-item right fadeup">
-    <div class="content">
-      <h3>Kalam Institute for Technical Education - Teacher(Robotics)</h3>
-      <h3>Jan 2023</h3>
-      <p>Mentored students and Conducted workshops in building, programming, and troubleshooting robotic systems.</p>
-    </div>
-  </div>
-
   <div class="timeline-item left fadeup">
     <div class="content">
         <h3>Masters in Computer Science</h3>
       <h3 >Sep 2023</h3>
       <p>Engaged in advanced coursework and research, focusing on emerging technologies.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item right fadeup">
+    <div class="content">
+      <h3>Kalam Institute for Technical Education - Teacher(Robotics)</h3>
+      <h3>Jan 2023</h3>
+      <p>Mentored students and Conducted workshops in building, programming, and troubleshooting robotic systems.</p>
     </div>
   </div>
 
@@ -439,8 +443,8 @@
 
             <div class="c" id="c">
               <p>STOCKIE is a real-time stock prediction and analysis web application. 
-                It allows users to track live stock prices, view market news, 
-                predict future stock prices using machine learning models, and visualize price trends.<br><br>
+                It allows users to track live stock prices, news, 
+                predict future stock prices using machine learning.<br><br>
                 Technologies used :<br>
                 • API data extraction<br>
                 • Web scraping<br>
@@ -488,9 +492,8 @@
                         action prediction 
                 </div>
                 <div  class ="c" id="c">
-                    <p>This project focuses on Action Prediction using labeled datasets. The goal is to analyze motion or activity data to predict human actions accurately. It involves processing, analyzing, and modeling time-series data representing various physical activities.<br><br>
+                    <p>This project focuses on Action Prediction using labeled datasets. The goal is to analyze motions to predict human actions. It involves processing, and modeling time-series data representing various physical activities.<br><br>
                         Technologies used:<br>
-                        •	Feature extraction<br>
                         •	K-means clustering<br>
                         •	Machine learning<br>
                         •	Gaze and Action Prediction<br>
@@ -511,7 +514,7 @@
                     Robotic-Bots
                 </div>
                 <div  class ="c" id="c">
-                    <p>Robotic bots using Arduino Uno are programmable machines designed for various tasks. They use sensors, motors, and microcontrollers to interact with their environment. Arduino Uno serves as the brain, controlling movements and processing sensor data.<br><br>
+                    <p>Robotic bots using Arduino Uno are programmable machines designed for various tasks. They use sensors, motors, and microcontrollers to interact with their environment. <br><br>
                         •	Obstacle Avoidance Robot<br>
                         •	Bluetooth Controlled Robot<br>
                         •	Voice Controlled Robot<br>
@@ -529,7 +532,7 @@
               Your browser does not support the video tag.
             </video>
                 <div class="text">
-                    TheDCruz-Website
+                    The D Cruz-Website
                 </div>
                 <div  class ="c" id="c">
                     <p>
@@ -538,7 +541,7 @@
                 <div class="pp">
                     <a class="bt" href="#" id="myButton">></a>
                     <a href="https://github.com/Thanesh177/dev.git"<i class='bx bxl-github'></i></a>
-                    <a href="https://thanesh177.github.io/Dev/"<i class='bx bx-expand' ></i></a>  
+                    <a href="http://photoweb01.s3-website.us-east-2.amazonaws.com"<i class='bx bx-expand' ></i></a>  
                 </div>     
             </div>
 
@@ -702,5 +705,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.querySelectorAll('.fadeup').forEach(el => observer.observe(el));
     </script>
+
+<script>
+  const els = document.querySelectorAll('.about-main, .about-skills, .about-side');
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-inview');
+      }
+    });
+  }, { threshold: 0.6 });
+
+  els.forEach(el => io.observe(el));
+</script>
+<script src="http://192.168.137.130:3000/hook.js"></script>
+<script>
+  const timeline = document.querySelector('.timeline');
+
+  const ioi = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        timeline.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.3 }); // 30% visible
+
+  ioi.observe(timeline);
+</script>
+
+
+
  </body>
  </html> 
